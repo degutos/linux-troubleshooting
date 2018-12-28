@@ -1,4 +1,4 @@
-# linux-troubleshooting
+# Linux Troubleshooting
 This is a Linux Troubleshooting knowledge  
 
 This is only some basic steps and personal notes for Linux Troubleshooting 
