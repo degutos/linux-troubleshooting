@@ -48,3 +48,40 @@
 [root@andregonzaga1c ~]# journalctl -o verbose
 ```
 
+# Making persistent log with journalctl
+
+```
+[root@andregonzaga1c ~]# vi /etc/systemd/journald.conf 
+```
+
+- check if Storage=auto
+
+```
+[Journal]
+#Storage=auto
+```
+
+### Create /var/log/journal
+
+`[root@andregonzaga1c ~]# mkdir /var/log/journal/`
+
+### Change permission and owner
+
+```
+[root@andregonzaga1c ~]# chown root.systemd-journal journal/
+[root@andregonzaga1c ~]# chmod 2755 /var/log/journal/
+```
+
+### restart process
+
+```
+[root@andregonzaga1c ~]# killall -USR1 systemd-journald
+```
+
+- After that reboot server and check again `journalctl`
+
+
+
+
+
+
