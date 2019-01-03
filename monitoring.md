@@ -24,4 +24,7 @@ success
 success
 ```
 
+- Access through your browser
+`https://server_ip:9090`
+
 
